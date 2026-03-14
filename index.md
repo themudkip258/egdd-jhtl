@@ -224,21 +224,21 @@ When you answer a question at the last second, the game rewards you with a sense
 - Textures:
   - Pizza Sprite:
   <br>
-  ![The Pizza Sprite](/assets/images/Pizza_Sprite.png "Pizza Sprite")
+  ![The Pizza Sprite](./assets/images/Pizza_Sprite.png)
   - Burger Sprite:
   <br>
-  ![The Burger Sprite](/assets/images/Burger_Sprite.png "Burger Sprite")
+  ![The Burger Sprite](./assets/images/Burger_Sprite.png)
   - Plate Texture:
   <br>
-  ![The Plate Sprite](/assets/images/Plate_Sprite.png "Plate Sprite")
+  ![The Plate Sprite](./assets/images/Plate_Sprite.png)
 
 - Environment Art/Textures:
   - Kitchen Background:
   <br>
-  ![Kitchen Background](/assets/images/Kitchen_Background.png "Kitchen Background")
+  ![Kitchen Background](./assets/images/Kitchen_Background.png)
   - Conveyor Belt:
   <br>
-  ![Conveyor Belt](/assets/images/Conveyor_Belt.png "Conveyor Belt Texture")
+  ![Conveyor Belt](./assets/images/Conveyor_Belt.png)
 
 
 ## Audio

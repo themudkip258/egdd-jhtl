@@ -28,14 +28,14 @@ It is the lunch rush and you need to hurry! You are the server, and you have to 
 # Learning Aspects
 
 ## Learning Domains
-Introductory programming, code tracing, and function scope
+Introductory programming, code tracing, and function scope.
 
 
 ## Target Audiences
 Introductory Python students, slightly familiar with coding, but lacking fundamentals. Appropriate for any age.
 
 ## Target Contexts
-(K-12) computer lab style game, fun practice activity given at the start the semester
+(K-12) computer lab style game, fun practice activity given at the start the semester.
 
 
 ## Learning Objectives
@@ -116,7 +116,7 @@ Grading Logic: The correct answer is 8, any other answer is incorrect.
 This is meant to be a single player game, but with an arcade-style leaderboard to incentivize players to get the highscore, either for their personal best, or between friends and classmates.
 
 ## Player Modes
-- Main Menu: The main screen the game boots to, allows you to select one of the 3 different modes of the game you want to play as buttons
+- Main Menu: The main screen the game boots to, allows you to select one of the 3 different modes of the game you want to play from their associated buttons.
 - Basic Trace: A basic version of the game where you trace through a statement of code with no function calls or pointer references. You must determine whether the statement for a given variable’s value is true or false.
 - Function Trace: An intermediate version of the game where you trace through a code snippet with a function call, global, and local variables. You must determine whether the statement for a given variable’s value is true or false.
 - Pointer Trace: The most difficult version of the game where you trace through a code snippet involving variables and pointers holding the addresses of the variables which may update those other variables. You must determine whether the statement for a given variable is true.
@@ -124,21 +124,23 @@ This is meant to be a single player game, but with an arcade-style leaderboard t
 
 
 # Gameplay Objectives
-Accept or Reject the Order:
-    - Description: The order comes through on a conveyor belt, you have to check the code on the tv, and accept if the variable on the order lines up with the code, and reject the order if it does not.
-    - Alignment: This aligns with the “identifying variable values” learning objective, as players must correctly identify the value of a variable.
-Rack Up Points:
-    - Description: Your main goal is to rack up as many points over a certain time period. This will allow you to get a high score.
-    - Alignment: You are able to get points by getting orders right, and you can get more points by getting many orders right in a row to speed up the conveyor belt, which by getting a question correct you prove understanding of the 3 learning objectives.
-Combo Counter:
-    - Description: When you get a certain amount of orders right in a row, you activate Lunch Rush, where the conveyor belt speeds up and you can collect a large amount of points, this gives skilled players a decent challenge.
-    - Alignment: You are able to activate lunch rush by getting the correct orders, and allows you to rack up points for a high score, showing that you are getting faster at tracing code, thus satisfying the learning objectives laid out earlier.
+**Accept or Reject the Order**:
+- Description: The order comes through on a conveyor belt, you have to check the code on the tv, and accept if the variable on the order lines up with the code, and reject the order if it does not.
+- Alignment: This aligns with the “identifying variable values” learning objective, as players must correctly identify the value of a variable.
+
+**Rack Up Points**:
+- Description: Your main goal is to rack up as many points over a certain time period. This will allow you to get a high score.
+- Alignment: You are able to get points by getting orders right, and you can get more points by getting many orders right in a row to speed up the conveyor belt, which by getting a question correct you prove understanding of the 3 learning objectives.
+
+**Combo Counter**:
+- Description: When you get a certain amount of orders right in a row, you activate Lunch Rush, where the conveyor belt speeds up and you can collect a large amount of points, this gives skilled players a decent challenge.
+- Alignment: You are able to activate lunch rush by getting the correct orders, and allows you to rack up points for a high score, showing that you are getting faster at tracing code, thus satisfying the learning objectives laid out earlier.
 
 
 # Procedures/Actions
-- Click mode select to play the selected mode
-- Click the accept button to accept the current statement as true
-- Click the reject button to reject the current statement 
+- Click mode select to play the selected mode.
+- Click the accept button to accept the current statement as true.
+- Click the reject button to reject the current statement. 
 
 # Rules
 The player has points they can use to buy powerups to slow the progression of the questions (slow down the speed of the belt). These points are accumulated by answering questions and serves as a way to save up and reward the player by giving them a slight mental break.
@@ -155,13 +157,16 @@ The player has points they can use to buy powerups to slow the progression of th
 
 
 ## Core Gameplay Mechanics (Detailed)
-The "Code Monitor":
+**The "Code Monitor"**:
+<br>
 This is the code snippet at the top of the screen that the player has to currently trace through. It displays the snippet the player must parse. As the level progresses, the code may change to reflect a different question, but the style is the same for each question of the same “mode”. If the code has a variable stating fish = 5, then any plate on the belt saying fish = 4 is incorrect. Early levels will show less lines of code; later levels will show more lines of code including more complex control structures such as loops, if statements, and function calls.
 
-The "Conveyor Belt":
+**The "Conveyor Belt"**:
+<br>
 The belt serves as the game’s timer and adds an element of pressure and rush to the game, as the game is trying to teach students to correctly identify variable values and decrease the time it takes to do so. The plates carrying variables and their values move at a constant speed towards the right side of the screen. Once a plate crosses the right edge of the conveyor belt, it is considered "Served", and increases the player’s score. If the player hits the wrong button, they gain no points and their streak is reset. At higher difficulties, plates are spaced closer together, forcing faster reactions to correctly answer the question.
 
-The "Accept/Reject" Buttons:
+**The "Accept/Reject" Buttons**:
+<br>
 This is the player’s primary way of interacting with the variables. If the accept button is clicked: the player affirms that the variable has that value listed next to it, and the plate passes through. 
 If the reject button is clicked, the plate containing the variable and value are removed from the belt, if the player thinks the variable does not have that associated value. If the player presses the correct button, the score increases, a correct sound plays, and the combo meter is incremented. If the incorrect button is selected, the score does not change, but the combo meter is reset, and an incorrect sound plays.
 
@@ -188,10 +193,17 @@ The game will start slowly with a few lines of code, and the player will not be 
 This game will have you be a server in a kitchen and you must choose which dishes to serve by correctly assessing the variable-value pair statement stamped on the plate.
 
 ## Storyboarding
+**Mode Selector Screen**:
+<br>
 ![The Mode Selector Screen](/assets/images/Mode_Selector_Screen.png "Mode Selector Screen")
 
+
+**Gameplay Storyboard**:
+<br>
 ![Gameplay Storyboard](/assets/images/Gameplay_Storyboard.jpg "Gameplay Storyboard")
 
+**Game Over Screen**:
+<br>
 ![The Game Over Screen](/assets/images/Game_Over_Screen.png "Game Over Screen")
 
 
@@ -210,17 +222,22 @@ When you answer a question at the last second, the game rewards you with a sense
   - Manager: This is the character that you meet at the end of the game, especially if you do a bad job. They serve as a game over screen.
 
 - Textures:
-  - Pizza Sprite
+  - Pizza Sprite:
+  <br>
   ![The Pizza Sprite](/assets/images/Pizza_Sprite.png "Pizza Sprite")
-  - Burger Sprite
+  - Burger Sprite:
+  <br>
   ![The Burger Sprite](/assets/images/Burger_Sprite.png "Burger Sprite")
-  - Plate Texture
+  - Plate Texture:
+  <br>
   ![The Plate Sprite](/assets/images/Plate_Sprite.png "Plate Sprite")
 
 - Environment Art/Textures:
-  - Kitchen Background
+  - Kitchen Background:
+  <br>
   ![Kitchen Background](/assets/images/Kitchen_Background.png "Kitchen Background")
-  - Conveyor Belt
+  - Conveyor Belt:
+  <br>
   ![Conveyor Belt](/assets/images/Conveyor_Belt.png "Conveyor Belt Texture")
 
 

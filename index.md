@@ -221,24 +221,38 @@ When you answer a question at the last second, the game rewards you with a sense
   - Server: This is the main character, they are the character you control and is the one that brings out the orders. They make sure they are the star employee at the workplace, making sure the food goes out on time. They are so focused on their job that they throw out the orders that aren’t even theirs, messing up the workplace.
   - Manager: This is the character that you meet at the end of the game, especially if you do a bad job. They serve as a game over screen.
 
-- Textures:
-  - Pizza Sprite:
-  <br>
-  ![The Pizza Sprite](./assets/images/Pizza_Sprite.png)
-  - Burger Sprite:
-  <br>
-  ![The Burger Sprite](./assets/images/Burger_Sprite.png)
-  - Plate Texture:
-  <br>
-  ![The Plate Sprite](./assets/images/Plate_Sprite.png)
+**Textures**:
+- Pizza Sprite:
 
-- Environment Art/Textures:
-  - Kitchen Background:
-  <br>
-  ![Kitchen Background](./assets/images/Kitchen_Background.png)
-  - Conveyor Belt:
-  <br>
-  ![Conveyor Belt](./assets/images/Conveyor_Belt.png)
+<br>
+
+![The Pizza Sprite](./assets/images/Pizza_Sprite.png)
+  
+- Burger Sprite:
+  
+<br>
+
+![The Burger Sprite](./assets/images/Burger_Sprite.png)
+  
+- Plate Texture:
+  
+<br>
+
+![The Plate Sprite](./assets/images/Plate_Sprite.png)
+
+
+**Environment Art/Textures**:
+- Kitchen Background:
+  
+<br>
+
+![Kitchen Background](./assets/images/Kitchen_Background.png)
+
+- Conveyor Belt:
+
+<br>
+
+![Conveyor Belt](./assets/images/Conveyor_Belt.png)
 
 
 ## Audio

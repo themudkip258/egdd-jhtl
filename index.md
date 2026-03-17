@@ -57,6 +57,7 @@ Introductory Python students, slightly familiar with coding, but lacking fundame
 
 ## Assessment Measures
 Question 1: Basic trace
+<br>
 Identify the value of the variable “shrimp” after the following lines of code are executed:
 ```C
 int shrimp = 20;        
@@ -69,7 +70,8 @@ Grading Logic: The correct answer is 30. Any other answer is incorrect.
 
 <br><br>
 
-Question 2: Global vs local trace
+Question 2: Global vs Local trace
+<br>
 Identify the value of the variable “sauce_bottles” after the following lines of code are executed:
 ```C
 int sauce_bottles = 10; 
@@ -88,7 +90,8 @@ Grading Logic: The correct answer is 12. Any other answer is incorrect.
 <br><br>
 
 
-Question 3: Pointer update
+Question 3: Pointer Update
+<br>
 Identify the value of the variable “salmon_order” after the following lines of code are executed:
 ```C
 int salmon_order = 2;    

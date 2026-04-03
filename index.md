@@ -1,7 +1,7 @@
 # That's Not My Programmer
 
 ## Elevator Pitch
-It is the lunch rush and you need to hurry! You are the server, and you have to grab the right orders; however, the ticket machine malfunctioned and is now only printing variables! You have to be quick and check the code on the order TV to make sure the variable has the correct value; if not, that order goes straight in the trash! Hopefully, your coworkers don’t get too mad.
+It is the lunch rush and you need to hurry! You are the cook, and you make all of the orders fast; however, the ticket machine malfunctioned and is now only code snippets! You have to be quick and decipher the structs and main code to make the correct order; if not, you will have a couple of angry cutomers, and maybe an angry manager on top of that.
 
 ## Influences (Brief)
 
@@ -17,22 +17,22 @@ It is the lunch rush and you need to hurry! You are the server, and you have to 
 
 
 ## Core Gameplay Mechanics (Brief)
-- Objects representing variables and their values come through on a conveyor belt.
-- The code snippet for a question about a variable’s value shows up on a tv in the corner.
-- You hit a button “Accept or Reject” to accept or reject the assertion statement for the variable.
-- The more you get correct, the faster the conveyor belt goes, giving the player less time to answer, but they are compensated with more points. 
-- When the player gets a question wrong, the conveyor belt speed resets.
+- Order tickets come in containing a code snippet.
+- The code snippet contains a struct that makes up the orders, with fields containing variables.
+- You drag and drop the ingredients based on the struct to make the correct order.
+- The more you get correct, the more orders that come in, giving the player less time to answer, but they are compensated with more points. 
+- When the player gets a question wrong, the amount of orders slow down.
 - A Combo meter is filled for a correct answer streak, which gives the user more points.
 
 
 # Learning Aspects
 
 ## Learning Domains
-Introductory programming, code tracing, and function scope.
+Semi-Introductory programming, code tracing, and function scope.
 
 
 ## Target Audiences
-Introductory Python students, slightly familiar with coding, but lacking fundamentals. Appropriate for any age.
+Introductory C students, slightly familiar with coding, but lacking fundamentals. Appropriate for any age. Best suited as a prerequisite for CISC210.
 
 ## Target Contexts
 (K-12) computer lab style game, fun practice activity given at the start the semester.
@@ -43,6 +43,7 @@ Introductory Python students, slightly familiar with coding, but lacking fundame
 - Recognizing Pointer Updates: By the end of the lesson, players will be able to identify if a pointer has updated a specific variable’s value.
 - Monitoring Global Variables: By the end of the lesson, players will be able to correctly identify the value of a global variable after a function call.
 - Trace Sequential State: By the end of the lesson, players will be able to accurately log how a variable’s value changes over multiple assignment operations.
+- Identifying Struct and Field values: By the end of the lesson, players will be able to identify the initialization of the fields in the structs.
 
 
 ## Prerequisite Knowledge
@@ -58,15 +59,21 @@ Introductory Python students, slightly familiar with coding, but lacking fundame
 ## Assessment Measures
 Question 1: Basic trace
 <br>
-Identify the value of the variable “shrimp” after the following lines of code are executed:
+Identify the value of "cheese" for the struct "cheeseBurger":
 ```C
-int shrimp = 20;        
-int order = 5;          
+struct Burger {
+  boolean cheese;
+  char condiments[2][10]
+}
 
-shrimp = shrimp - order; 
-shrimp = shrimp * 2;   
+void main(){
+  Burger cheeseBurger;
+  cheeseBurger.cheese = false;
+  cheeseBurger.condiments = {"ketchup","mayo"};
+  cheeseBurger.cheese = true; 
+}
 ```
-Grading Logic: The correct answer is 30. Any other answer is incorrect.
+Grading Logic: The correct answer is true. Any other answer is incorrect.
 
 <br><br>
 
@@ -108,7 +115,6 @@ Grading Logic: The correct answer is 8, any other answer is incorrect.
 - This game builds muscle memory for programming and quick debugging foundations, while abstracting away the code to make students stress less.
 - This game allows you to recognize when a value changes quickly due to the incentive of time.
 - It puts the idea of coding in a unique environment, making the gameplay loop much more enjoyable since it reminds you of other time crunch games.
-- You have the ability to throw away other servers’ food, which does not have an impact on gameplay but makes for a humorous story.
 - The game offers a unique risk reward mechanic with the lunch rush boost, which allows for players to gain much more points at the cost of less time to answer the questions.
 - This game gives players a break from an IDE/coding environment, replacing errors and incorrect answers with lost points, helping to change the environment and replace a frustrated mindset.
 
@@ -120,58 +126,58 @@ This is meant to be a single player game, but with an arcade-style leaderboard t
 
 ## Player Modes
 - Main Menu: The main screen the game boots to, allows you to select one of the 3 different modes of the game you want to play from their associated buttons.
-- Basic Trace: A basic version of the game where you trace through a statement of code with no function calls or pointer references. You must determine whether the statement for a given variable’s value is true or false.
-- Function Trace: An intermediate version of the game where you trace through a code snippet with a function call, global, and local variables. You must determine whether the statement for a given variable’s value is true or false.
-- Pointer Trace: The most difficult version of the game where you trace through a code snippet involving variables and pointers holding the addresses of the variables which may update those other variables. You must determine whether the statement for a given variable is true.
+- Basic Trace: A basic version of the game where you trace through a statement of code with no function calls or pointer references. You must determine what the values of the fields are to make the order.
+- Function Trace: An intermediate version of the game where you trace through a code snippet with a function call, global, and local variables. You must determine what the values of the fields are to make the order.
+- Pointer Trace: The most difficult version of the game where you trace through a code snippet involving variables and pointers holding the addresses of the variables which may update those other variables. You must determine what the values of the fields are to make the order.
 - Game Over: A game over screen played after you have advanced through many questions and have not reached the correct amount of points. Allows you to go back to the home screen.
 
 
 # Gameplay Objectives
-**Accept or Reject the Order**:
-- Description: The order comes through on a conveyor belt, you have to check the code on the tv, and accept if the variable on the order lines up with the code, and reject the order if it does not.
-- Alignment: This aligns with the “identifying variable values” learning objective, as players must correctly identify the value of a variable.
+**Make the Order**:
+- Description: The order ticket is added to your list, you have to check the code, and determine what the ingredients are based off of the fields.
+- Alignment: This aligns with the “identifying struct and field values” learning objective, as players must correctly identify the value of a variable.
 
 **Rack Up Points**:
 - Description: Your main goal is to rack up as many points over a certain time period. This will allow you to get a high score.
-- Alignment: You are able to get points by getting orders right, and you can get more points by getting many orders right in a row to speed up the conveyor belt, which by getting a question correct you prove understanding of the 3 learning objectives.
+- Alignment: You are able to get points by getting orders right, and you can get more points by getting many orders right in a row to speed up the orders, which by getting a question correct you prove understanding of the 3 learning objectives.
 
 **Combo Counter**:
-- Description: When you get a certain amount of orders right in a row, you activate Lunch Rush, where the conveyor belt speeds up and you can collect a large amount of points, this gives skilled players a decent challenge.
+- Description: When you get a certain amount of orders right in a row, you activate Lunch Rush, where the amount of orders speed up and you can collect a large amount of points, this gives skilled players a decent challenge.
 - Alignment: You are able to activate lunch rush by getting the correct orders, and allows you to rack up points for a high score, showing that you are getting faster at tracing code, thus satisfying the learning objectives laid out earlier.
 
 
 # Procedures/Actions
 - Click mode select to play the selected mode.
-- Click the accept button to accept the current statement as true.
-- Click the reject button to reject the current statement. 
+- Drag and drop the food items to create the order. 
 
 # Rules
 The player has points they can use to buy powerups to slow the progression of the questions (slow down the speed of the belt). These points are accumulated by answering questions and serves as a way to save up and reward the player by giving them a slight mental break.
 
 # Objects/Entities
-- A conveyor belt entity
+- A stove entity
+- A kitchen table top entity
 - Plates to represent assertions
 - A ticket to represent the current code snippet
-- Accept button
-- Reject button
+- Various ingredients
 - Background screen
 - Main game screen
 - Pause menus
+- Clock timer
 
 
 ## Core Gameplay Mechanics (Detailed)
-**The "Code Monitor"**:
+**The "Code Tickets"**:
 <br>
-This is the code snippet at the top of the screen that the player has to currently trace through. It displays the snippet the player must parse. As the level progresses, the code may change to reflect a different question, but the style is the same for each question of the same “mode”. If the code has a variable stating fish = 5, then any plate on the belt saying fish = 4 is incorrect. Early levels will show less lines of code; later levels will show more lines of code including more complex control structures such as loops, if statements, and function calls.
+This is the code snippet on the tickets that the player has to currently trace through. It displays the snippet the player must parse. As the level progresses, the code may change to reflect a different question, but the style is the same for each question of the same “mode”. After figuring out the different field variables, the player must drag and drop the correct ingredients. Early levels will show less lines of code; later levels will show more lines of code including more complex control structures such as loops, if statements, and function calls.
 
-**The "Conveyor Belt"**:
+**The "Shift Timer"**:
 <br>
-The belt serves as the game’s timer and adds an element of pressure and rush to the game, as the game is trying to teach students to correctly identify variable values and decrease the time it takes to do so. The plates carrying variables and their values move at a constant speed towards the right side of the screen. Once a plate crosses the right edge of the conveyor belt, it is considered "Served", and increases the player’s score. If the player hits the wrong button, they gain no points and their streak is reset. At higher difficulties, plates are spaced closer together, forcing faster reactions to correctly answer the question.
+This timer adds an element of pressure and rush to the game, as the game is trying to teach students to correctly identify field variable values and decrease the time it takes to do so. When the player gets a question right, more orders come in. If the player gets the order wrong, they gain no points and their streak is reset. At higher difficulties, orders come in more frequently, forcing faster reactions to correctly answer the question.
 
-**The "Accept/Reject" Buttons**:
+**Sending Out Orders**:
 <br>
-This is the player’s primary way of interacting with the variables. If the accept button is clicked: the player affirms that the variable has that value listed next to it, and the plate passes through. 
-If the reject button is clicked, the plate containing the variable and value are removed from the belt, if the player thinks the variable does not have that associated value. If the player presses the correct button, the score increases, a correct sound plays, and the combo meter is incremented. If the incorrect button is selected, the score does not change, but the combo meter is reset, and an incorrect sound plays.
+This is the player’s primary way of interacting with the variables. Players drag and drop the ingredients to make the correct order. 
+If the player makes the correct order, the score increases, a correct sound plays, and the combo meter is incremented. If the incorrect order is made, the score does not change, but the combo meter is reset, and an incorrect sound plays.
 
 
     
@@ -185,7 +191,7 @@ We collect the player’s score, as well as the total number of questions answer
 # Story and Gameplay
 
 ## Presentation of Rules
-There will be a short instruction blurb when loading the game mode, telling the player to assess whether the given statement is correct or incorrect by scanning through the code screen. Press the associated button for your answer. The buttons will also have a glowing animation around them at first to guide the player’s eyes to them.
+There will be a short instruction blurb when loading the game mode, telling the player to assess the correct ingredients looking at the code ticket. Drag and drop the associated ingredients for your answer. The ingredients will also have a glowing animation around them at first to guide the player’s eyes to them.
 
 
 ## Presentation of Content
@@ -221,7 +227,7 @@ When you answer a question at the last second, the game rewards you with a sense
 
 ## Graphical
 - Characters List
-  - Server: This is the main character, they are the character you control and is the one that brings out the orders. They make sure they are the star employee at the workplace, making sure the food goes out on time. They are so focused on their job that they throw out the orders that aren’t even theirs, messing up the workplace.
+  - Cook: This is the main character, they are the character you control and is the one that makes the orders. They make sure they are the star employee at the workplace, making sure the food goes out on time.
   - Manager: This is the character that you meet at the end of the game, especially if you do a bad job. They serve as a game over screen.
 
 **Textures**:

@@ -47,7 +47,7 @@ Introductory C students, slightly familiar with coding, but lacking fundamentals
 
 
 ## Prerequisite Knowledge
-- Prior to the game, players need to be able to interpret basic Python code (=, if, function).
+- Prior to the game, players need to be able to interpret basic C code (=, if, function).
 - Prior to the game, players need to be able to explain the difference between a local and global variable.
 - Prior to the game, players must identify when a pointer changes the value of a variable indirectly.
 - Prior to the game, players must explain what a pointer is.
@@ -156,7 +156,7 @@ The player has points they can use to buy powerups to slow the progression of th
 # Objects/Entities
 - A stove entity
 - A kitchen table top entity
-- Plates to represent assertions
+- Plates to represent orders
 - A ticket to represent the current code snippet
 - Various ingredients
 - Background screen
@@ -182,7 +182,7 @@ If the player makes the correct order, the score increases, a correct sound play
 
     
 ## Feedback
-The player will accumulate points towards their total score after answering questions correctly. When a question is answered correctly there will be a green flash of light in the bin they sorted the assertion statement into. If the question is answered incorrectly there will be a red flash of light in the bin they sorted the statement into, and they will gain no points. Additionally there will be separate audio tracks for when the player answers the question correctly vs. incorrectly. The more questions the player gets correct, the closer they are to achieving the learning objective for that level of questions.
+The player will accumulate points towards their total score after answering questions correctly. When a question is answered correctly there will be a green flash of light at the end of the screen as the order leaves. If the question is answered incorrectly there will be a red flash of light when the order leaves the screen, and they will gain no points. Additionally there will be separate audio tracks for when the player answers the question correctly vs. incorrectly. The more questions the player gets correct, the closer they are to achieving the learning objective for that level of questions.
 
 # Longer Term Feedback
 We collect the player’s score, as well as the total number of questions answered correctly, and the total number of questions the player has attempted. The player will not have as many points if they have been consistently incorrect. When the player has been answering many questions correctly, the pace of the problems will speed up, and the code snippets will get longer, but they will also get more points during these “phases”. At a certain point if the player has not answered enough questions correctly, the game will end and recommend that they try again, and may provide links to relevant materials. At the end of a level, the player will be provided with analytics about the questions and topics they have answered incorrectly. When the player is able to progressively get to the end of a level and the speed has been increasing, then they know they have progressed and have mastered the learning objective.
@@ -199,7 +199,7 @@ The game will start slowly with a few lines of code, and the player will not be 
 
 
 ## Story (Brief)
-This game will have you be a server in a kitchen and you must choose which dishes to serve by correctly assessing the variable-value pair statement stamped on the plate.
+This game will have you be a server in a kitchen and you must construct the correct dishes by correctly assessing the content of the variables that make up the order.
 
 ## Storyboarding
 **Mode Selector Screen**:
@@ -209,7 +209,7 @@ This game will have you be a server in a kitchen and you must choose which dishe
 
 **Gameplay Storyboard**:
 <br>
-![Gameplay Storyboard](/assets/images/IMG_1197[1].HEIC "Gameplay Storyboard")
+![Gameplay Storyboard](/assets/images/Updated_Storyboard.png "Gameplay Storyboard")
 
 **Game Over Screen**:
 <br>
@@ -220,7 +220,7 @@ This game will have you be a server in a kitchen and you must choose which dishe
 
 ## Aethestics
 That's Not My Programmer blends the gameplay of Papers, Please with the rhythm of classic 80s arcade games such as Galaga.
-An industrial metal belt carries vibrant white plates carrying values and variables, emphasizing the values they carry.
+An industrial metal belt carries white plates to construct the order and the ticket corresponding to the order is shown on the screen.
 Rhythmic music keeps pace with the speed of the level, and satisfying sounds play when the correct decision is made and a frustrating sound is played for incorrect answers.
 When you answer a question at the last second, the game rewards you with a sense of relief. You leave each level feeling more confident in your programming abilities as you have just practiced your craft.
 

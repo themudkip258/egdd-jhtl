@@ -209,7 +209,7 @@ This game will have you be a server in a kitchen and you must choose which dishe
 
 **Gameplay Storyboard**:
 <br>
-![Gameplay Storyboard](/assets/images/Gameplay_Storyboard.jpg "Gameplay Storyboard")
+![Gameplay Storyboard](/assets/images/IMG_1197[1].HEIC "Gameplay Storyboard")
 
 **Game Over Screen**:
 <br>
